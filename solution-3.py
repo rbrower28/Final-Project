@@ -92,7 +92,7 @@ class Binary_Tree:
             difference_squared += (tree_sorted[i] - mean) ** 2
 
         # Finding Square Root of the differences and the list length
-        standard_deviation = math.sqrt(difference_squared / ((len(tree_sorted)) - 1))
+        standard_deviation = math.sqrt(difference_squared / len(tree_sorted))
 
         return standard_deviation
 
@@ -131,7 +131,7 @@ def _insert_middle(sorted_list, first, last, bst):
 """ ---- Tests ---- """
 
 tree1 = generate_tree([10, 20, 30, 40, 50, 60])
-print(tree1.standard_deviation())
+print(tree1.standard_deviation()) # 17.07825127659933
 
 tree2 = generate_tree([1, 4, 5, 6, 7, 8, 14])
-print(tree2.standard_deviation())
+print(tree2.standard_deviation()) # 3.7361990944634345
