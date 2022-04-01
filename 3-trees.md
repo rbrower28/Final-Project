@@ -259,9 +259,9 @@ The instructions are as follows:
 
 * First, you will need to create a recursive function that goes through each item on the tree and places it on a list.
 
-* Next, you will need to calculate the mean (average) of the data.
+* Next, you will need to sort the list to prepare it for the standard deviation function.
 
-* Finally, you will need to place the standard deviation function from above and run the numbers through it.
+* Finally, you will need to use the standard deviation function from above and run the numbers through it.
 
 The standard deviation will be returned at the end.
 
