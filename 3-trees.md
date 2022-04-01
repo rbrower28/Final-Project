@@ -6,9 +6,17 @@ Looping through data one at a time will bring a Big O notation of O(n), and can 
 
 Creating a binary tree allows you to sort information and retrieve data with a Big O notation of O(log(n)) - also known as O(2^n), which is even more efficient than O(n) and guarantees that it will take less iterations than the whole length of the data.
 
-## This is what a data tree looks like:
+## This is what a data tree can look like:
 
-**data tree image**
+```
+           G 
+         /   \
+       C      J
+      / \    / \
+     B   E  H   K
+    /   / \  \   \
+   A   D   F  I   L
+```
 
 Each node, or spot on the tree can possibly have a left value and a right. Just like your family tree, each will continue branching until all the data is included.
 
@@ -217,10 +225,10 @@ In this problem you will need to take all the ages from a list and calculate wit
 The formula to calculate standard deviation is this:
 
 ```
-big formula here
+σ = √(Σ(X-μ)^2)/n
 ```
 
-in python, that huge formula will look something like this.
+in python, that crazy formula will look something like this.
 
 ```
 def standard_deviation(sample_list):
